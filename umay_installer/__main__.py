@@ -26,7 +26,7 @@ def connect (api):
     return heroku_conn
 
 def createApp (connect):
-    appname = "golden" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
+    appname = "umay" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
     try:
         connect.create_app(name=appname, stack_id_or_name='container', region_id_or_name="eu")
     except requests.exceptions.HTTPError:
@@ -100,7 +100,7 @@ if __name__ == "__main__":
 
     # Noldu Kendi Reponu Yazamadın Mı? Hadi Başka Kapıya #
     if os.path.isdir("./UmayUserBot/"):
-        rm_r("./UmayUserBot/")
+        rm_r("./HerLockDev/")
     repo = Repo.clone_from(REPO_URL,"./UmayUserBot/", branch="main")
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
