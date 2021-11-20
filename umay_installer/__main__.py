@@ -3,7 +3,7 @@ from time import time
 import random
 import requests
 from git import Repo
-from golden_installer import *
+from umay_installer import *
 from .astring import main
 import os
 from telethon import TelegramClient, functions
