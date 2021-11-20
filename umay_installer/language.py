@@ -28,4 +28,4 @@ def importlang ():
     return COUNTRY, LANGUAGE, TZ
 
 COUNTRY, LANGUAGE, TZ = importlang()
-LANG = loads(open(f"./golden_installer/language/{LANGUAGE}.umayjson", "r").read())["STRINGS"]
+LANG = loads(open(f"./umay_installer/language/{LANGUAGE}.umayjson", "r").read())["STRINGS"]
