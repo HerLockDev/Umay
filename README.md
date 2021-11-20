@@ -1,1 +1,1 @@
-# Umayinstallere
+# qalaktikainstaller
