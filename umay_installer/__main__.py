@@ -99,9 +99,9 @@ if __name__ == "__main__":
     onemli(LANG['DOWNLOADING'])
 
     # Noldu Kendi Reponu Yazamadın Mı? Hadi Başka Kapıya #
-    if os.path.isdir("./UmayUserBot/"):
+    if os.path.isdir("./AquaUserBot/"):
         rm_r("./HerLockDev/")
-    repo = Repo.clone_from(REPO_URL,"./UmayUserBot/", branch="main")
+    repo = Repo.clone_from(REPO_URL,"./AquaUserBot/", branch="main")
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
